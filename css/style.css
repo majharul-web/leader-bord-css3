@@ -96,12 +96,19 @@ hr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 26px;
+  margin-top: 10px;
 }
-
+.course {
+  padding: 7px 10px 7px 14px;
+  border: 1px solid #f1e1e1;
+  box-shadow: 3px 2px 33px grey;
+  border-radius: 5px;
+}
 .course-banner img {
   width: 224px;
   height: 104px;
 }
+
 .fa-star {
   font-size: 12px;
 }
@@ -141,6 +148,7 @@ hr {
     align-items: center;
   }
 
-  .courses {
+  .course {
+    text-align: center;
   }
 }
