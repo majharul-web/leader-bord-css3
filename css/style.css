@@ -26,6 +26,57 @@ main {
   border-radius: 5px;
 }
 
+/* navbar style */
+.navbar {
+  background-color: #562eff;
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo-image img {
+  width: 40px;
+  height: 50px;
+}
+.nav-brand {
+  margin-left: 16px;
+}
+.nav-brand a {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 24px;
+  text-decoration: none;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.menu li {
+  margin: 15px;
+}
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  position: relative;
+}
+.menu a:hover::after {
+  content: "";
+  position: absolute;
+  border-bottom: 5px solid #ffffff;
+  bottom: 0;
+  width: 35px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.menu img {
+  width: 50px;
+  height: 50px;
+}
+
 /* top players style */
 
 .section-title {
@@ -132,7 +183,8 @@ hr {
 
 /* for mobile */
 @media only screen and (max-width: 688px) {
-  .container {
+  .container,
+  .navbar {
     width: 100%;
   }
   .players,
@@ -150,5 +202,11 @@ hr {
 
   .course {
     text-align: center;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .logo {
+    margin: 35px 0 0 35px;
   }
 }
